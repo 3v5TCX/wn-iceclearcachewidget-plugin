@@ -1,0 +1,32 @@
+{
+    "name": "winter/wn-iceclearcachewidget-plugin",
+    "type": "winter-plugin",
+    "description": "Location plugin for Winter CMS",
+    "homepage": "https://github.com/wintercms/wn-location-plugin",
+    "keywords": ["wintercms", "cms", "location", "iceclearcachewidget"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Romanov",
+            "role": "Original Author"
+        },
+        {
+            "name": "Belonogov Ilya Y.",
+            "homepage": "https://belonogov.com",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/wintercms/wn-location-plugin/issues",
+    },
+    "require": {
+        "php": ">=7.2",
+        "composer/installers": "~1.0"
+    },
+    "replace": {
+        "rainlab/location-plugin": "<= 1.1.6"
+    },
+    "extra": {
+        "installer-name": "location"
+    }
+}
