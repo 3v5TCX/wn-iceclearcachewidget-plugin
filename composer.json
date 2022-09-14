@@ -1,5 +1,5 @@
 {
-    "name": "winter/wn-iceclearcachewidget-plugin",
+    "name": "icecollection/wn-iceclearcachewidget-plugin",
     "type": "winter-plugin",
     "description": "Location plugin for Winter CMS",
     "homepage": "https://github.com/wintercms/wn-location-plugin",
