@@ -2,4 +2,5 @@
 ## Ice clean cache
 Clear file cache widget for dashboard
 ## Install
-icecollection.iceclearcachewidget
+composer require icecollection/wn-iceclearcachewidget-plugin 
+
