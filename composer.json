@@ -17,7 +17,7 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/wintercms/wn-location-plugin/issues",
+        "issues": "https://github.com/3v5TCX/wn-iceclearcachewidget-plugin.git"
     },
     "require": {
         "php": ">=7.2",
