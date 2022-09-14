@@ -1,10 +1,10 @@
 <?php
-namespace IceCollection\iceclearcachewidget\ReportWidgets;
+namespace icecollection\iceclearcachewidget\ReportWidgets;
 use Backend\Classes\ReportWidgetBase;
 
 class ClearCache extends ReportWidgetBase
 {
-    protected $defaultAlias = 'romanov_clear_cache';
+    protected $defaultAlias = 'icecollection_clear_cache';
 
     public function render(){
         $this->vars['size'] = $this->getSizes();

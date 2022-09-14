@@ -1,4 +1,4 @@
-<?php namespace IceCollection\iceclearcachewidget;
+<?php namespace icecollection\iceclearcachewidget;
 
 use System\Classes\PluginBase;
 use Lang;
@@ -20,7 +20,7 @@ class Plugin extends PluginBase
     public function registerReportWidgets()
     {
         return [
-            'Romanov\iceclearcachewidget\ReportWidgets\ClearCache' => [
+            'icecollection\iceclearcachewidget\ReportWidgets\ClearCache' => [
                 'label'   => 'icecollection.iceclearcachewidget::lang.plugin.name',
                 'context' => 'dashboard'
             ]

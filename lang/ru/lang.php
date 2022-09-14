@@ -1,7 +1,7 @@
 <?php
 return [
     'plugin' => [
-        'name' => 'Очистка кэша',
+        'name' => 'IceCollection: Очистка кэша',
         'description' => 'Виджет для панели управления',
         'cache' => 'Файловый кэш',
         'clear' => 'Очистить',
