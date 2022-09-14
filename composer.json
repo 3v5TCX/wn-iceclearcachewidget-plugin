@@ -23,10 +23,7 @@
         "php": ">=7.2",
         "composer/installers": "~1.0"
     },
-    "replace": {
-        "rainlab/location-plugin": "<= 1.1.6"
-    },
     "extra": {
-        "installer-name": "location"
+        "installer-name": "iceclearcachewidget"
     }
 }
