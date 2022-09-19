@@ -1,5 +1,5 @@
 <?php
-namespace icecollection\iceclearcachewidget\ReportWidgets;
+namespace Icecollection\clearcachewidget\ReportWidgets;
 use Backend\Classes\ReportWidgetBase;
 
 class ClearCache extends ReportWidgetBase
@@ -18,29 +18,29 @@ class ClearCache extends ReportWidgetBase
         return [
             'title' => [
                 'title'             => 'backend::lang.dashboard.widget_title_label',
-                'default'           => 'icecollection.iceclearcachewidget::lang.plugin.name',
+                'default'           => 'icecollection.clearcachewidget::lang.plugin.name',
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
                 'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'nochart' => [
-                'title'             => 'icecollection.iceclearcachewidget::lang.plugin.nochart',
+                'title'             => 'icecollection.clearcachewidget::lang.plugin.nochart',
                 'type'              => 'checkbox',
             ],
             'radius' => [
-                'title'             => 'icecollection.iceclearcachewidget::lang.plugin.radius',
+                'title'             => 'icecollection.clearcachewidget::lang.plugin.radius',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
                 'validationMessage' => 'Only numbers!',
                 'default'           => '200',
             ],
             'delthumbs' => [
-                'title'             => 'icecollection.iceclearcachewidget::lang.plugin.delthumbs',
+                'title'             => 'icecollection.clearcachewidget::lang.plugin.delthumbs',
                 'type'              => 'checkbox',
                 'default'           => false,
             ],
 			'thumbspath' => [
-                'title'             => 'icecollection.iceclearcachewidget::lang.plugin.delthumbspath',
+                'title'             => 'icecollection.clearcachewidget::lang.plugin.delthumbspath',
                 'type'              => 'string',
                 'placeholder'       => "/app/uploads/public",
             ],
@@ -50,7 +50,7 @@ class ClearCache extends ReportWidgetBase
     public function onClear(){
         \Artisan::call('cache:clear');
         if($this->property("delthumbs"))    $this->delThumbs();
-        \Flash::success(e(trans('icecollection.iceclearcachewidget::lang.plugin.success')));
+        \Flash::success(e(trans('icecollection.clearcachewidget::lang.plugin.success')));
         $widget = ($this->property("nochart"))? 'widget2' : 'widget';
         return [
             'partial' => $this->makePartial($widget, ['size' => $this->getSizes(),'radius' => $this->property("radius")])

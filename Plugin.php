@@ -1,4 +1,4 @@
-<?php namespace icecollection\iceclearcachewidget;
+<?php namespace Icecollection\clearcachewidget;
 
 use System\Classes\PluginBase;
 use Lang;
@@ -9,8 +9,8 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'icecollection.iceclearcachewidget::lang.plugin.name',
-            'description' => 'icecollection.iceclearcachewidget::lang.plugin.description',
+            'name'        => 'icecollection.clearcachewidget::lang.plugin.name',
+            'description' => 'icecollection.clearcachewidget::lang.plugin.description',
             'author'      => 'Alexander Romanov',
             'maintainer'    => 'Belonogov Ilya',
             'icon'        => 'icon-trash'
@@ -20,8 +20,8 @@ class Plugin extends PluginBase
     public function registerReportWidgets()
     {
         return [
-            'icecollection\iceclearcachewidget\ReportWidgets\ClearCache' => [
-                'label'   => 'icecollection.iceclearcachewidget::lang.plugin.name',
+            'Icecollection\clearcachewidget\ReportWidgets\ClearCache' => [
+                'label'   => 'icecollection.clearcachewidget::lang.plugin.name',
                 'context' => 'dashboard'
             ]
         ];
