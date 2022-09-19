@@ -1,5 +1,5 @@
 <?php
-namespace Icecollection\clearcachewidget\ReportWidgets;
+namespace IceCollection\ClearCacheWidget\ReportWidgets;
 use Backend\Classes\ReportWidgetBase;
 
 class ClearCache extends ReportWidgetBase

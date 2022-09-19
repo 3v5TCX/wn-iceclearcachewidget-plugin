@@ -1,4 +1,4 @@
-<?php namespace Icecollection\clearcachewidget;
+<?php namespace IceCollection\ClearCacheWidget;
 
 use System\Classes\PluginBase;
 use Lang;
