@@ -1,5 +1,5 @@
 <div id="cachesizes" class="report-widget">
-    <h3><?= e(trans('icecollection.iceclearcachewidget::lang.plugin.cache')) ?></h3>
+    <h3><?= e(trans('icecollection.clearcachewidget::lang.plugin.cache')) ?></h3>
     <div class="control-chart" data-control="chart-pie" data-size="<?=$radius?>" data-center-text="<?=$size['all']?>">
         <ul>
             <li>cms/cache<span><hide class="hidden"><?=$size['ccache_b']?></hide>&nbsp;<?=$size['ccache']?></span></li>
@@ -11,6 +11,6 @@
     <button type="button" class="btn btn-success" style="margin-left: 50px;"
             data-request="<?= $this->getEventHandler('onClear') ?>"
             data-request-success="$('#cachesizes').replaceWith(data.partial)">
-        <?= e(trans('icecollection.iceclearcachewidget::lang.plugin.clear')) ?> <span class="fa icon-trash"></span>
+        <?= e(trans('icecollection.clearcachewidget::lang.plugin.clear')) ?> <span class="fa icon-trash"></span>
     </button>
 </div>
