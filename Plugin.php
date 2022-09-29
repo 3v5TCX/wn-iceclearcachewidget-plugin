@@ -20,7 +20,7 @@ class Plugin extends PluginBase
     public function registerReportWidgets()
     {
         return [
-            'Icecollection\clearcachewidget\ReportWidgets\ClearCache' => [
+            'IceCollection\ClearCacheWidget\ReportWidgets\ClearCache' => [
                 'label'   => 'icecollection.clearcachewidget::lang.plugin.name',
                 'context' => 'dashboard'
             ]
